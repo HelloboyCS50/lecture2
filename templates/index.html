@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+
+	{% extends 'layout.html' %}
+
+	{% block heading%}
+		First Page
+	{% endblock %}
+
+	{% block body %}
+
+	<p>I want to leave this country because this country have lots of problem and not have freedom right That's why i need to do something with programming and leave this country.</p>
+
+	<a href="{{url_for('more')}}">More..</a>
+	
+	{% endblock %}
+
+</body>
+</html>

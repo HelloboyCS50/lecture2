@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NOTE</title>
+</head>
+<body>
+
+	{% block heading %}
+		Note
+	{% endblock %}
+
+	{% block body %}
+
+	<ul>
+
+		{% for note in notes %}
+			<li>{{ note }}</li>
+
+		{% endfor %}
+	</ul>
+	
+
+
+		<form action="{{ url_for ('form) }}" , method="post">
+			<input type="text" name="note" placeholder="Add Note">
+			<button>Submit</button>
+		</form>
+
+	{% endblock %}
+
+</body>
+</html>

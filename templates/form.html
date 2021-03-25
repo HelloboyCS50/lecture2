@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="m-5">
+
+	{% block heading %}
+		 Welcome To Frist Page !
+
+	{% endblock %}
+
+	{% block body %}
+
+	<!-- <form class="form-group" action="{{ url_for ('hello') }}" method="post">
+		<input class="form" type="text" name="name" placeholder="Enter Your Name ">
+		<button class="btn btn-primary">Submit</button>
+	</form> -->
+
+	<form action="{{ url_for ('hello') }}" , method="post">
+		<input type="text" name="name" placeholder="Enter Your Name">
+		<button class="btn btn-primary">Submit</button>
+	</form>
+
+	{% endblock %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
